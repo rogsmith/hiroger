@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Circular Std Book';
+}
+/* Font face */
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+      url('../fonts/CircularStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+      url('../fonts/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+      url('../fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova Alt Rg';
+  src: url('../fonts/ProximaNovaA-Bold.woff2') format('woff2'),
+      url('../fonts/ProximaNovaA-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova Alt Lt';
+  src: url('../fonts/ProximaNovaA-Semibold.woff2') format('woff2'),
+      url('../fonts/ProximaNovaA-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* Banner styling */
+.banner-text h1{
+  color: #333333;
+  letter-spacing: 1.5px;
+  word-spacing: -2px;
+}
+.sub-heading{
+  color: #FF5931;
+  word-spacing: .5px;
+  letter-spacing: .2px;
+}
+.btn{
+  background-color: #FF5931;
+  word-spacing: 1.1px;
+}
+.availability{
+  background-color: #FFE7DB;
+}
+.availability:after{
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  right: 44px;
+  background: url(/images/polygon.svg) no-repeat center;
+  width: 29px;
+  height: 26px;
+}
+.details{
+  color: #FF5931;
+}
+.details-days{
+  font-family: 'Proxima Nova Alt Rg';
+  letter-spacing: -.2px;
+}
+.details-text{
+  font-family: 'Circular Std Book';
+  letter-spacing: .2px;
+}
+/* Process styling */
+.process h2{
+  color: #FF5931;
+  letter-spacing: .4px;
+}
+.process-text p{
+  color: #4F4F4F;
+}
+/* Simplicity styling */
+.simplicity-text{
+  color: #333333;
+}
+.simplicity-text h3{
+  letter-spacing: .4px;
+}
+/* Working styling */
+.work{
+  color: #333333;
+}
+.work-image{
+  background-color: #FFE7DB;
+}
+.icon-fast{
+  width: 20px;
+height: 28px;
+  background-size: 150px auto;
+  background-position: -65px -19px;
+  background-image: url(/images/sprite.png);
+}
+.icon-match{
+  width: 20px;
+height: 18px;
+  background-size: 150px auto;
+  background-position: -23px -66px;
+  background-image: url(/images/sprite.png);
+}
+.icon-easy{
+  width: 20px;
+height: 20px;
+  background-size: 150px auto;
+  background-position: -33px -33px;
+  background-image: url(/images/sprite.png);
+}
+.serial-num{
+  background-color: #193FCC;
+  font-family: 'Proxima Nova Alt Lt';
+}
+/* Trust styling */
+.trust{
+  color: #333333;
+}
+/* Step 1 styling */
+/* Intro styling */
+.intro{
+  color: #333333;
+}
+/* Step 2 styling */
+/* Zipcode styling */
+.zipcode h1{
+  color: #333333;
+}
+.form-wrap input[type='text']{
+  border-color:#E0E0E0;
+}
+.form-wrap input[type='text']::placeholder{
+  color: #BDBDBD;
+}
+.back-btn{
+  color: #FF5931;
+  border-color: #FF5931;
+}
+.form-wrap input[type='submit']{
+  background-color: #FF5931;
+}
+/* Desktop */
+@media all and (min-width:1280px){
+  /* Header styling */
+  .logo{
+      margin-left: -10px;
+  }
+  /* Banner styling */
+  .banner-text{
+      margin-top: 226px;
+  }
+  .banner-text h1{
+      font-size: 7.2rem;
+  }
+  .sub-heading{
+      font-size: 3.6rem;
+  }
+  .btn{
+      font-size: 2.4rem;
+  }
+  .availability{
+      top: 335px;
+      width: 236px;
+      right: 423px;
+      padding: 38px 16px 23px 24px;
+      border-radius: 23px;
+  }
+  .availability:after {
+      bottom: -22px;
+      right: 26px;
+  }
+  .employee-image{
+      top: -32px;
+      left: 11px;
+  }
+  .details{
+      font-size: 2rem;
+  }
+  /* Process styling */
+  .process h2{
+      font-size: 4.8rem;
+  }
+  .process-text{
+      font-size: 1.8rem;
+      width: 253px;
+      margin-top: 106px;
+  }
+  .process-text p{
+      margin-bottom: 82px;
+  }
+  .process-text p:nth-child(2){
+      margin-bottom: 81px;
+  }
+  .process-image{
+      width: 788px;
+  }
+  /* Simplicity styling */
+  .mobile-image{
+      width: 272px;
+      margin: 7px 124px 0 45px;
+  }
+  .simplicity-text h3{
+      font-size: 4.8rem;
+      line-height: .9;
+      margin-bottom: 28px;
+  }
+  .simplicity-text p{
+      font-size: 2.4rem;
+      line-height: 1.3;
+  }
+  /* Working styling */
+  .working h3{
+      font-size: 4.8rem;
+      line-height: .9;
+      letter-spacing: .5px;
+      margin-bottom: 86px;
+  }
+  .work{
+      width: 323px;
+  }
+  .work h6{
+      font-size: 2rem;
+  }
+  .work p{
+      font-size: 2rem;
+  }
+  .serial-num{
+      font-size: 1.8rem;
+  }
+  .icon-fast{
+      width: 40px;
+    height: 56px;
+      background-size: 300px auto;
+      background-position: -130px -38px;
+  }
+  .icon-match{
+      width: 40px;
+      height: 36px;
+      background-size: 300px auto;
+      background-position: -46px -132px;
+  }
+  .icon-easy{
+      width: 40px;
+      height: 40px;
+      background-size: 300px auto;
+      background-position: -66px -66px;
+  }
+  .working .btn{
+      word-spacing: 0;
+  }
+  /* Trust styling */
+  .trust h3{
+      font-size: 4.8rem;
+      letter-spacing: .5px;
+      line-height: .9;
+      margin-bottom: 95px;
+  }
+  .trust p{
+      font-size: 2.4rem;
+      line-height: 1.37;
+  }
+  .trust .container > p{
+      width: 384px;
+      letter-spacing: .2px;
+      word-spacing: -.5px;
+  }
+  .trust-image{
+      width: 612px;
+  }
+  .trust-detail p{
+      width: 385px;
+      margin-top: 172px;
+      letter-spacing: .1px;
+  }
+  .trust-detail:last-child .trust-image{
+      width: 384px;
+  }
+  .trust-detail:last-child p{
+      margin-top: 88px;
+  }
+  /* Step 1 styling */
+  /* Intro styling */
+  .intro h1{
+      font-size: 4.8rem;
+  }
+  .intro p{
+      font-size: 2.4rem;
+      letter-spacing: .2px;
+  }
+  .intro .btn{
+      font-size: 2rem;
+      letter-spacing: -.1px;
+  }
+  /* Step 2 styling */
+  /* Zipcode styling */
+  .zipcode h1{
+      font-size: 4.8rem;
+      letter-spacing: .5px;
+  }
+  .form-wrap input[type='text']{
+      font-size: 1.8rem;
+      width: 300px;
+  }
+  .form-wrap input[type='text']::placeholder{
+      font-size: 1.8rem;
+  }
+  .btn-wrap a{
+      font-size: 2rem;
+  }
+  .back-btn{
+      padding: 13px 37px 10px 38px;
+  }
+  .form-wrap input[type='submit']{
+      padding: 13px 39px 10px 37px;
+      letter-spacing: .5px;
+  }
+}
+@media all and (min-width:1440px){
+  /* Header styling */
+  .logo{
+      margin-left: -55px;
+  }
+}
+@media all and (min-width:1536px){
+  /* Header styling */
+  .logo{
+      margin-left: 0px;
+  }
+}

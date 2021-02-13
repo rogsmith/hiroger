@@ -1,4 +1,3 @@
-import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Head from 'next/head';
 import Link from 'next/link'
@@ -8,7 +7,7 @@ export const siteTitle = 'Next.js JOIn Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div class="wrapper">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -24,48 +23,16 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <nav className="fixed w-full z-30 top-1 flex justify-between" style={{ borderBottom: '1px #DADADA solid'}}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <h3 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>Home</a>
-              </Link>
-            </h3>
-            <Link href="/">
-              <a className={styles.headerImageWrapper}>
-                <img
-                  src="/images/roger.jpeg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </nav>
-      <div className='flex flex-col pt-24'>{children}</div>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <header class="primary-header pt-10 pb-4 lg:pb-6 lg:pt-14 fixed top-0 left-0 w-full bg-white z-10">
+          <div class="container mx-auto md:pl-10">
+              <div class="logo w-36 xl:w-40 mx-auto md:mx-0">
+                  <a class="block" href="/">
+                      <img src="/images/logo.png" alt="logo" title="logo"/>
+                  </a>
+              </div>
+          </div>
+      </header>
+      {children}
     </div>
   )
 }

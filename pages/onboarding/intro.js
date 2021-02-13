@@ -1,25 +1,36 @@
 import Layout from '../../components/layout';
 import Link from 'next/link';
 import Typist from 'react-typist';
+import React, {Component, Fragment} from 'react';
 
-export default function Intro() {
-    return (
-      <Layout>
-        <div className='flex flex-auto justify-center pt-10'>
-            <div className='md:w-1/2 justify-center items-start text-center'>
-                <div className=' md:text-left'>
-                    <h1 className='my4 text-3xl font-bold'>
-                        <p>Hi, I'm Roger.</p>
-                        <p>I'm here to help you find a Medicare solution that best suits your needs.</p>
-                        <button>Let's start</button>
-                    </h1>
+export default class Intro extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    initLead(){
+        console.log("start")
+    }
+
+    render(){
+        return (
+        <Layout>
+            <section class="intro pt-40 xl:pt-52">
+                <div class="container mx-auto px-5 md:flex justify-center">
+                    <div class="intro-wrap text-center md:text-left">
+                        <div class="profile flex items-center justify-center md:justify-start mb-10 xl:mb-8">
+                            <h1 class="font-medium text-5xl xl:mt-2">Hi, I’m Roger</h1>
+                            <div class="profile-image w-20 ml-6 xl:ml-4">
+                                <img class="rounded-full w-full" src="/images/roger-1.png" alt="roger" title="roger"/>
+                            </div>
+                        </div>
+                        <p class="text-2xl xl:leading-none mb-10">I’m here to help find a Medicare solution that best suits your needs.</p>
+                        <a class="btn xl:leading-snug text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-6 md:px-7 xl:px-10" onClick={this.initLead}>Let’s start</a>
+                    </div>
                 </div>
-                <div className='flex flex-auto flex-row mt-10'>
-                    <input type='text' placeholder='Zip Code' className='mr-5 shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out'/>
-                    <button type='button' className='mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out'>Go</button>
-                </div>
-            </div>
-        </div>
-      </Layout>
-    )
+            </section>
+        </Layout>
+        )
+    }
   }
