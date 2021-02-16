@@ -11,4 +11,13 @@ handler.get(async (req, res) => {
     console.log(doc);
     res.json(doc);
 });
+
+handler.post(async (req, res) => {
+    let data = req.body;
+    console.log(data)
+    //data = JSON.parse(data);
+    console.log(data)
+    let doc = await req.db.collection('leads').insertOne(data)
+    res.json(doc.ops[0]);
+})
 export default handler;

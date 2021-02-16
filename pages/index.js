@@ -10,7 +10,7 @@ export default function Home() {
               <div class="banner-text text-center md:text-left mbf-20 md:w-2/5 md:mb-0 md:mt-60 xl:ml-2.5">
                   <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-2 md:mb-3 xl:mb-6" >Medicare is complicated,</h1>
                   <span class="sub-heading block font-medium mb-6 md:mb-7 xl:mb-11 text-3xl md:text-4xl lg:text-5xl">he makes it simple.</span>
-                  <a class="btn transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-5 md:px-6 text-2xl lg:text-3xl font-medium xl:leading-none xl:py-10 xl:px-12" href="/onboarding/intro">Let Roger help you</a>
+                  <a class="btn transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-5 md:px-6 text-2xl lg:text-3xl font-medium xl:leading-none xl:py-10 xl:px-12" href="/onboarding/start">Let Roger help you</a>
               </div>
               <div class="availability md:z-30 text-center md:text-left rounded-3xl relative w-72 p-6 pt-8 mx-auto mb-10 md:mb-0 md:absolute md:top-80 md:right-1/3">
                   <div class="employee-image absolute -top-5 left-0 right-0 w-10 mx-auto xl:w-28">

@@ -1,4 +1,4 @@
-import Layout from '../../components/layout';
+import Layout from '../../../../components/layout';
 import Link from 'next/link';
 import Typist from 'react-typist';
 import { Component } from 'react';

@@ -2,8 +2,13 @@ import Layout from '../../components/layout';
 import Link from 'next/link';
 import Typist from 'react-typist';
 import React, {Component, Fragment} from 'react';
+import { inject, observer } from 'mobx-react';
+import autobind from 'autobind-decorator';
 
-export default class Intro extends Component {
+@inject('store') 
+@observer
+@autobind
+export default class Start extends Component {
 
     constructor(props) {
         super(props);
@@ -11,16 +16,20 @@ export default class Intro extends Component {
 
     initLead(){
         console.log("start")
+        this.props.store.createLead({zip: '96724'})
     }
 
     render(){
+        console.log("ROGER")
+        console.log(this.props.store.lead)
+        let lead = this.props.store.lead;
         return (
         <Layout>
             <section class="intro pt-40 xl:pt-52">
                 <div class="container mx-auto px-5 md:flex justify-center">
                     <div class="intro-wrap text-center md:text-left">
                         <div class="profile flex items-center justify-center md:justify-start mb-10 xl:mb-8">
-                            <h1 class="font-medium text-5xl xl:mt-2">Hi, I’m Roger</h1>
+                            <h1 class="font-medium text-5xl xl:mt-2">Hi, I’m Roger { lead?.zip }</h1>
                             <div class="profile-image w-20 ml-6 xl:ml-4">
                                 <img class="rounded-full w-full" src="/images/roger-1.png" alt="roger" title="roger"/>
                             </div>
