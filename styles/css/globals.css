@@ -161,6 +161,9 @@ height: 20px;
 .form-wrap input[type='submit']{
   background-color: #FF5931;
 }
+.form-wrap input[type='button']{
+  background-color: #FF5931;
+}
 /* Desktop */
 @media all and (min-width:1280px){
   /* Header styling */
@@ -336,6 +339,10 @@ height: 20px;
       padding: 13px 39px 10px 37px;
       letter-spacing: .5px;
   }
+  .form-wrap input[type='button']{
+    padding: 13px 39px 10px 37px;
+    letter-spacing: .5px;
+}
 }
 @media all and (min-width:1440px){
   /* Header styling */

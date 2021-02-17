@@ -2,15 +2,23 @@ import Layout from '../../components/layout';
 import Link from 'next/link';
 import Typist from 'react-typist';
 import React, {Component, Fragment} from 'react';
+import { inject, observer } from 'mobx-react';
+import autobind from 'autobind-decorator';
+import Router from 'next/router';
 
-export default class Intro extends Component {
+@inject('store') 
+@observer
+@autobind
+export default class Start extends Component {
 
     constructor(props) {
         super(props);
     }
 
     initLead(){
-        console.log("start")
+        this.props.store.createLead({}).then((lead) => {
+            Router.push('/onboarding/'+this.props.store.lead._id+'/steps/1')
+        })
     }
 
     render(){

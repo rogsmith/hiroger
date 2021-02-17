@@ -5,10 +5,8 @@ const client = new MongoClient('mongodb+srv://hirogerdev:aussie1234@cluster0.eqq
   useUnifiedTopology: true,
 });
 async function database(req, res, next) {
-    console.log("Fred11")
   if (!client.isConnected()) await client.connect();
   req.dbClient = client;
-  console.log("Fred")
   req.db = client.db('hiroger_dev');
   return next();
 }
