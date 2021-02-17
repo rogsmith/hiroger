@@ -1,5 +1,5 @@
 import { action, observable, computed, runInAction, makeObservable } from 'mobx'
-import { enableStaticRendering } from 'mobx-react'
+import { enableStaticRendering, useStaticRendering } from 'mobx-react'
 import { useMemo } from 'react'
 // eslint-disable-next-line react-hooks/rules-of-hooks
 enableStaticRendering(typeof window === 'undefined')
@@ -24,8 +24,7 @@ function initializeStore(initialData = null) {
     return _store
 }
 
-export function useStore(initialState) {
-    const isServer = typeof window === 'undefined';
-    const store = useMemo(() => isServer ? props.initialMobxState : initializeStore(initialState), [initialState])
+export function useStore(initialState= {}) {
+    const store = useMemo(() => initializeStore(initialState), [initialState])
     return store
 }

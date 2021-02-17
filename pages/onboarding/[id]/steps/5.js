@@ -1,9 +1,60 @@
-import Layout from '../../components/layout';
+import Layout from '../../../../components/layout';
 import Link from 'next/link';
 import Typist from 'react-typist';
+import { inject, observer } from 'mobx-react';
 import { Component } from 'react';
+import autobind from 'autobind-decorator';
+import Router from 'next/router';
+import { useRouter } from 'next/router'
+import { withRouter } from "next/router";
+import Document from 'next/document'
+import { InlineWidget,PopupWidget, openPopupWidget } from "react-calendly"
 
-export default class Step5 extends Component {
+@inject('store') 
+@observer
+@autobind
+class Step5 extends Component {
+    static async getInitialProps(ctx) {
+      return {};
+    }
+
+    constructor(props) {
+      super(props);
+      this.state = {
+        name: "",
+        email: '',
+      }
+    }
+
+    componentDidMount(){
+      if(this.props.router.query.id){
+        this.props.store.fetchLead(this.props.router.query.id).then(() => {
+          this.setState({name: this.props.store.lead.name, email: this.props.store.lead.email})
+          this.openCalendly();
+        });
+      }
+    }
+
+    openCalendly(){
+      openPopupWidget(
+        { 
+          pageSettings:{
+            backgroundColor: 'ffffff',
+            hideEventTypeDetails: true,
+            hideLandingPageDetails: false,
+            primaryColor: '00a2ff',
+            textColor: '4d5055'
+          },
+          prefill:{
+            email: this.props.store.lead.email,
+            name: this.props.store.lead.name
+          },
+          styles:{
+            height: '1000px'
+          },
+          url: "https://calendly.com/hiroger"
+        })
+    }
 
     render(){
       return (
@@ -19,14 +70,6 @@ export default class Step5 extends Component {
                     </div>
                       
                       <div class="form-wrap mx-auto md:ml-0">
-                          <form>
-                              <p class="text-2xl xl:leading-none mb-10">Select a date and time below that works to speak with me.</p>
-                              <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="Year of birth" placeholder="e.g. 1956"/>
-                              <div class="btn-wrap mt-10">
-                                  <a href="/onboarding/intro" class="back-btn mr-5 xl:mr-3 border capitalize text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-3 px-10 md:px-12">back</a>
-                                  <input class="cursor-pointer outline-none text-xl md:text-3xl capitalize transform hover:scale-110 motion-reduce:transform-none text-white rounded-full py-3 px-10 md:px-12" type="submit" value="next"/>
-                              </div>
-                          </form>
                       </div>
                   </div>
               </div>
@@ -34,4 +77,5 @@ export default class Step5 extends Component {
         </Layout>
       )
     }
-  }
+}
+export default withRouter(Step5);

@@ -6,7 +6,8 @@ export default class LeadStore {
     endpoint = 'leads';
   
     constructor(initialData = {}) {
-      this.lead = initialData.lead;
+        makeObservable(this);
+        this.lead = initialData.lead;
     }
 
     @action hydrate = (data) => {
@@ -20,24 +21,44 @@ export default class LeadStore {
      * @param {*} lead 
      */
     @action createLead(lead){
-        try {
-            fetch('/api/leads', {
-                method: 'POST',
-                headers: {
-                'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(lead),
-            })
-            .then(response => response.json())
-            .then(data => {
-                this.hydrate(data)
-            })
+        return fetch('/api/leads', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(lead),
+        })
+        .then(response => response.json())
+        .then(data => {
+            this.hydrate(data)
+        })
+    }
 
-            
-        } catch (error) {
-            console.error(error);
-            //setErrorMessage(error.message);
-        }
+    @action updateLead(){
+        return fetch('/api/leads', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(this.lead),
+        })
+        .then(response => response.json())
+        .then(data => {
+            this.hydrate(data)
+        })
+    }
+
+    @action fetchLead(id){
+        return fetch(`/api/leads?id=${id}`, {
+            method: 'GET',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            this.hydrate(data)
+        })        
     }
 
     /**
