@@ -70,7 +70,7 @@ class Step4 extends Component {
                       
                       <div class="form-wrap md:ml-0 md:text-center">
                           <form>
-                            <p className="text-2xl xl:leading-none mb-10"><small>We need this so that we can contact you during for our consultation.</small></p>
+                            <p className="text-2xl xl:leading-none mb-10"><small>We need this so that we can contact you for your consultation.</small></p>
                             <div className='flex flex-col items-center'>
                               <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="name" placeholder="Your name" value={this.state.name} onChange={this.updateName}/>
                               <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4 mt-3" type="text" name="email" placeholder="Email Address" value={this.state.email} onChange={this.updateEmail}/>
