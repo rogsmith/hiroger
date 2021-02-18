@@ -14,7 +14,7 @@ export default function Calendly(){
             }}
             text="Schedule a call with Roger"
             textColor="#ffffff"
-            url="https://calendly.com/hiroger"
+            url="https://calendly.com/hiroger/30min"
         />
     );
 }

@@ -53,9 +53,9 @@ class Step1 extends Component {
                       <div className="form-wrap md:ml-0 md:text-center">
                           <form>
                               <p className="text-2xl xl:leading-none mb-10">What is your zip code? <small>(We need this to find plans in your county)</small></p>
-                              <input className="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="zip" placeholder="e.g. 92019" value={this.state.zip} onChange={this.updateZip}/>
+                              <input className="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="number" name="zip" placeholder="e.g. 92019" value={this.state.zip} onChange={this.updateZip}/>
                               <div className="btn-wrap mt-10">
-                                  <a href="/onboarding/intro" className="back-btn mr-5 xl:mr-3 border capitalize text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-3 px-10 md:px-12">back</a>
+                                  <a href="/onboarding/start" className="back-btn mr-5 xl:mr-3 border capitalize text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-3 px-10 md:px-12">back</a>
                                   <input className="cursor-pointer outline-none text-xl md:text-3xl capitalize transform hover:scale-110 motion-reduce:transform-none text-white rounded-full py-3 px-10 md:px-12" onClick={this.updateLead} type="button" value="next"/>
                               </div>
                           </form>

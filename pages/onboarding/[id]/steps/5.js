@@ -49,10 +49,7 @@ class Step5 extends Component {
             email: this.props.store.lead.email,
             name: this.props.store.lead.name
           },
-          styles:{
-            height: '1000px'
-          },
-          url: "https://calendly.com/hiroger"
+          url: "https://calendly.com/hiroger/30min"
         })
     }
 
