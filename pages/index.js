@@ -79,7 +79,7 @@ export default function Home() {
                       <p class="text-2xl leading-relaxed xl:ml-2">Connect with Roger to go over the perks of your new policy </p>
                   </div>
               </div>
-              <a class="btn xl:py-10 xl:px-12 transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-5 md:px-6 text-2xl lg:text-3xl" href="#">Let Roger help you</a>
+              <a class="btn xl:py-10 xl:px-12 transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-5 md:px-6 text-2xl lg:text-3xl" href="/onboarding/start">Let Roger help you</a>
           </div>
       </section>
       <section class="trust py-10 xl:py-32">
