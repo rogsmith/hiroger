@@ -65,7 +65,7 @@ class Step4 extends Component {
                       <div class="profile-image w-20">
                           <img class="rounded-full w-full" src="/images/roger-1.png" alt="roger" title="roger"/>
                       </div>
-                      <p class="text-3xl xl:leading-none mb-10 mt-10 ml-2">What is your name and email? We accept aliases ;)</p>
+                      <p class="text-3xl xl:leading-none mb-10 mt-10 ml-2">What is your name and email?</p>
                     </div>
                       
                       <div class="form-wrap md:ml-0 md:text-center">
