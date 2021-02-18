@@ -74,7 +74,6 @@ class Step4 extends Component {
                               <div className='flex flex-col'>
                                 <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="name" placeholder="Your name" value={this.state.name} onChange={this.updateName}/>
                                 <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4 mt-3" type="text" name="email" placeholder="Email Address" value={this.state.email} onChange={this.updateEmail}/>
-                                <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4 mt-3" type="text" name="phone" placeholder="Phone" value={this.state.phone} onChange={this.updatePhone}/>
                                 <div class="btn-wrap mt-10">
                                     <a href="/onboarding/intro" class="back-btn mr-5 xl:mr-3 border capitalize text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-3 px-10 md:px-12">back</a>
                                     <input class="cursor-pointer outline-none text-xl md:text-3xl capitalize transform hover:scale-110 motion-reduce:transform-none text-white rounded-full py-3 px-10 md:px-12" onClick={this.updateLead} type="button" value="next"/>
