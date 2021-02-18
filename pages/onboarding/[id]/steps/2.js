@@ -56,7 +56,7 @@ class Step2 extends Component {
                       <p class="text-3xl xl:leading-none mb-10 mt-10 ml-2">What year were born?</p>
                     </div>
                       
-                      <div class="form-wrap mx-auto md:ml-0">
+                      <div class="form-wrap md:ml-0 md:text-center">
                           <form>
                               <input class="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="Year of birth" placeholder="e.g. 1956" value={this.state.yob} onChange={this.updateYob}/>
                               <div class="btn-wrap mt-10">

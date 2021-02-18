@@ -50,7 +50,7 @@ class Step1 extends Component {
               <div className="container mx-auto px-5 xl:px-0 md:flex justify-center">
                   <div className="zipcode-wrap text-center md:text-left">
                       <h1 className="xl:leading-tight text-center md:text-left font-medium text-4xl md:text-5xl mb-10 xl:mb-6">Great! I'll start by collecting a<br/> little bit of information from you. </h1>
-                      <div className="form-wrap mx-auto md:ml-0">
+                      <div className="form-wrap md:ml-0 md:text-center">
                           <form>
                               <p className="text-2xl xl:leading-none mb-10">What is your zip code? <small>(We need this to find plans in your county)</small></p>
                               <input className="border outline-none w-72 text-xl rounded-xl py-2 px-5 md:py-3 xl:px-7 xl:pt-5 xl:pb-4" type="text" name="zip" placeholder="e.g. 92019" value={this.state.zip} onChange={this.updateZip}/>

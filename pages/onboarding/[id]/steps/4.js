@@ -68,7 +68,7 @@ class Step4 extends Component {
                       <p class="text-3xl xl:leading-none mb-10 mt-10 ml-2">What is your name and email? We accept aliases ;)</p>
                     </div>
                       
-                      <div class="form-wrap mx-auto md:ml-0">
+                      <div class="form-wrap md:ml-0 md:text-center">
                           <form>
                           <p className="text-2xl xl:leading-none mb-10"><small>We need this so that we can contact you during for our consultation.</small></p>
                               <div className='flex flex-col'>

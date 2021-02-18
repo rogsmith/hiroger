@@ -56,16 +56,16 @@ class Step3 extends Component {
                       <p class="text-3xl xl:leading-none mb-10 mt-10 ml-2">Are you currrently enrolled in Medicare?</p>
                     </div>
                       
-                      <div class="form-wrap mx-auto md:ml-0">
+                      <div class="form-wrap md:ml-0 md:text-center">
                           <form>
-                            <div class="mt-2">
-                              <label class="inline-flex items-center">
+                            <div class="mt-2 flex flex-col">
+                              <label class="inline-flex items-left">
                                 <input type="radio" class="form-radio" name="enrolled" value="1" onChange={this.updateEnrolledStatus}/>
-                                <span class="ml-2">Yes, I am already enrolled.</span>
+                                <span class="ml-2 text-2xl">Yes, I am already enrolled.</span>
                               </label>
-                              <label class="inline-flex items-center ml-6">
+                              <label class="inline-flex items-left mt-2">
                                 <input type="radio" class="form-radio" name="enrolled" value="0" onChange={this.updateEnrolledStatus}/>
-                                <span class="ml-2">No, I have not enrolled in any Medicare yet.</span>
+                                <span class="ml-2 text-2xl">No, I have not enrolled in any Medicare yet.</span>
                               </label>
                             </div>
                               <div class="btn-wrap mt-10">
