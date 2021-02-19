@@ -31,7 +31,7 @@ export default function Home() {
                       <img class="w-full object-cover" src="/images/process.png" alt="process" title="process"/>
                   </figure>
                   <div class="process-text text-2xl text-center md:text-left">
-                      <p class="mb-11 leading-tight">You're will likely choose a policy that doesn't properly cover you</p>
+                      <p class="mb-11 leading-tight">You will likely choose a policy that doesn't properly cover you</p>
                       <p class="mb-11 xl:mr-28 leading-tight">You could be eligible for 3,000+ policies</p>
                       <p class="xl:mr-20 leading-tight">You may be overpaying for your plan</p>
                   </div>
@@ -46,7 +46,7 @@ export default function Home() {
               <div class="simplicity-text text-center md:text-left md:w-2/5 md:mt-72 lg:mt-60 lg:w-5/12">
                   <h3 class="font-medium text-5xl lg:text-6xl mb-10 md:mb-12">Roger made it simple</h3>
                   <p class="mb-6 text-2xl lg:mb-8 xl:mb-10 xl:ml-1">Roger is a real person with a genuine passion behind making Medicare simple.</p>
-                  <p class="text-2xl xl:ml-1">When I was helping my Mom sign up for Medicare, I realized how laborious and mystified the entire process was and couldn’t help but think…</p>
+                  <p class="text-2xl xl:ml-1">"When I was helping my Mom sign up for Medicare, I realized how laborious and mystified the entire process was and couldn’t help but think…"</p>
               </div>
           </div>
       </section>
