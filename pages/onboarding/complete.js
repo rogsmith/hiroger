@@ -39,7 +39,7 @@ class Complete extends Component {
                                 <img class="rounded-full w-full" src="/images/roger-1.png" alt="roger" title="roger"/>
                             </div>
                         </div>
-                        <p class="text-2xl xl:leading-none mb-10"> I will give you a call on: <Moment format="dddd, MMMM Do YYYY">{this.state.date}</Moment> at <Moment format="hh:mm A">{this.state.date}</Moment></p>
+                        <p class="text-2xl xl:leading-none mb-10"> I will give you a call on: <Moment format="dddd, MMMM Do">{this.state.date}</Moment> at <Moment format="hh:mm A">{this.state.date}</Moment></p>
                         
                         <br/>
                         <a class="btn xl:leading-snug text-xl md:text-3xl transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-6 md:px-7 xl:px-10" href='/'>Done</a>
