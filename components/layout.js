@@ -36,10 +36,11 @@ export default function Layout({ children, home }) {
           </div>
       </header>
       {children}
-      <Calendly></Calendly>
       {
         home ? (
-          <Footer></Footer>
+          <><Calendly></Calendly>
+            <Footer></Footer>
+          </>
         ) : (
           <div></div>
         )
