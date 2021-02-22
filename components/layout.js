@@ -37,7 +37,15 @@ export default function Layout({ children, home }) {
       </header>
       {children}
       <Calendly></Calendly>
-      <Footer></Footer>
+      {
+        home ? (
+          <Footer></Footer>
+        ) : (
+          <div></div>
+        )
+
+      }
+      
     </div>
   )
 }

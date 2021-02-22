@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout home="true">
       <section class="banner overflow-hidden pt-40 md:pt-0 pb-20">
           <div class="container px-5 mx-auto md:px-10 lg:px-12 md:relative md:flex md:items-start md:justify-between">
               <div class="banner-text text-center md:text-left mbf-20 md:w-2/5 md:mb-0 md:mt-60 xl:ml-2.5">
