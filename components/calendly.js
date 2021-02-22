@@ -3,7 +3,6 @@ import { InlineWidget,PopupWidget, openPopupWidget } from "react-calendly"
 export default function Calendly(){
     return (
         <PopupWidget
-            branding
             color="#00a2ff"
             pageSettings={{
                 backgroundColor: 'ffffff',
