@@ -2,6 +2,7 @@ import utilStyles from '../styles/utils.module.css'
 import Head from 'next/head';
 import Link from 'next/link'
 import Calendly from './calendly';
+import Footer from './footer';
 
 const name = 'Meet Roger'
 export const siteTitle = 'Next.js JOIn Website'
@@ -36,6 +37,7 @@ export default function Layout({ children, home }) {
       </header>
       {children}
       <Calendly></Calendly>
+      <Footer></Footer>
     </div>
   )
 }
