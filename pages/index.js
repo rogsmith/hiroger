@@ -11,13 +11,14 @@ export default function Home() {
                   <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold mb-2 md:mb-3 xl:mb-6" >Medicare is complicated,</h1>
                   <span class="sub-heading block font-medium mb-6 md:mb-7 xl:mb-11 text-3xl md:text-4xl lg:text-5xl">he makes it simple.</span>
                   <a class="btn transform hover:scale-110 motion-reduce:transform-none inline-block text-white rounded-full py-4 px-5 md:px-6 text-2xl lg:text-3xl font-medium xl:leading-none xl:py-10 xl:px-12" href="/onboarding/start">Let Roger help you</a>
+
+                  <p class="text-1xl lg:mt-10" style={{marginLeft: '5em'}}>Roger is completely <strong>FREE.</strong></p>
                </div>
               <div class="availability md:z-30 tex  t-center md:text-left rounded-3xl relative w-72 p-6 pt-8 mx-auto mb-10 md:mb-0 md:absolute md:top-80 md:right-1/3">
                   <div class="employee-image absolute -top-5 left-0 right-0 w-10 mx-auto xl:w-28">
                       <img class="rounded-full" src="/images/roger.png" alt="roger" title="roger"/>
                   </div>
-                  <div class="details leading-tight text-xl">Roger will be available to address your needs <span class="details-text font-bold">24/7, 365 days a year</span></div>
-                  <p class="text-1xl lg:mt-8">Roger is completely <strong>FREE.</strong></p>
+                  <div class="details leading-tight text-xl">You can text Roger anytime.<span class="details-text font-bold"><br/><br/>"I am here to answer your questions."</span></div>
               </div>
               <div class="banner-image md:relative md:z-20 md:-mr-10 md:w-6/12 lg:w-2/5 xl:w-1/2 2xl:w-5/12 xl:-mr-44">
                   <img class="w-full object-cover" src="/images/banner.png" alt="banner" title="banner"/>
@@ -27,15 +28,22 @@ export default function Home() {
       <section class="process pt-12 pb-10 xl:pt-36">
           <div class="container px-5 mx-auto xl:px-0">
               <h2 class="text-center font-medium text-5xl mb-20 lg:text-6xl xl:mb-32">It’s a frustrating and complex process</h2>
+              <div class="working-content flex items-center flex-col md:flex-row mb-20 md:items-start md:justify-between md:mb-32 lg:mx-24 xl:mb-20">
+                    <div class="work mb-20 w-100 xl:pr-28 xl:pl-4 md:mb-0">
+                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You will likely choose a policy that doesn't properly cover you</h6>
+                    </div>
+                    <div class="work mb-20 w-80 md:mb-1">
+                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You could be eligible for 3,000+ policies</h6>
+                    </div>
+                    <div class="work w-80 xl:pl-12">
+                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You may be overpaying for your plan</h6>
+                    </div>
+
+              </div>
               <div class="process-content w-full md:flex md:items-center md:justify-center">
                   <figure class="process-image mb-20 md:mb-0 md:mr-10 xl:mr-28">
                       <img class="w-full object-cover" src="/images/process.png" alt="process" title="process"/>
                   </figure>
-                  <div class="process-text text-2xl text-center md:text-left">
-                      <p class="mb-11 leading-tight">You will likely choose a policy that doesn't properly cover you</p>
-                      <p class="mb-11 xl:mr-28 leading-tight">You could be eligible for 3,000+ policies</p>
-                      <p class="xl:mr-20 leading-tight">You may be overpaying for your plan</p>
-                  </div>
               </div>
           </div>
       </section>
@@ -47,8 +55,7 @@ export default function Home() {
               <div class="simplicity-text text-center md:text-left md:w-2/5 md:mt-72 lg:mt-60 lg:w-5/12">
                   <h3 class="font-medium text-5xl lg:text-6xl mb-10 md:mb-12">Roger made it simple</h3>
                   <p class="mb-6 text-2xl lg:mb-8 xl:mb-10 xl:ml-1">Roger is a real person with a genuine passion behind making Medicare simple.</p>
-                  <p class="text-2xl xl:ml-1 lg:mb-8">"When I was helping my Mom sign up for Medicare, I realized how laborious and mystified the entire process was and couldn’t help but think…"</p>
-                  <p class="text-2xl xl:ml-1 lg:mb-8">The best part is that Roger is completely FREE.</p>
+                  <p class="text-2xl xl:ml-1 lg:mb-8">"When I was helping my Mom sign up for Medicare, I realized how laborious and mystified the entire process was and couldn’t help but think that there has to be a better way"</p>
               </div>
           </div>
       </section>
