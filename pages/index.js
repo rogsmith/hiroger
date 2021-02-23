@@ -29,14 +29,14 @@ export default function Home() {
           <div class="container px-5 mx-auto xl:px-0">
               <h2 class="text-center font-medium text-5xl mb-20 lg:text-6xl xl:mb-32">It’s a frustrating and complex process</h2>
               <div class="working-content flex items-center flex-col md:flex-row mb-20 md:items-start md:justify-between md:mb-32 lg:mx-24 xl:mb-20">
-                    <div class="work mb-20 w-100 xl:pr-28 xl:pl-4 md:mb-0">
-                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You will likely choose a policy that doesn't properly cover you</h6>
+                    <div class="work mb-20 w-100 xl:pr-28 xl:pl-4 md:mb-0 text-center">
+                        <h6 class="font-bold text-1xl mb-2 xl:mb-4">You will likely choose a policy that doesn't properly cover you</h6>
                     </div>
-                    <div class="work mb-20 w-80 md:mb-1">
-                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You could be eligible for 3,000+ policies</h6>
+                    <div class="work mb-20 w-80 md:mb-1 text-center">
+                        <h6 class="font-bold text-1xl mb-2 xl:mb-4">You could be eligible for 3,000+ policies</h6>
                     </div>
-                    <div class="work w-80 xl:pl-12">
-                    <h6 class="font-bold text-1xl mb-2 xl:mb-4">You may be overpaying for your plan</h6>
+                    <div class="work w-80 xl:pl-12 text-center">
+                        <h6 class="font-bold text-1xl mb-2 xl:mb-4">You may be overpaying for your plan</h6>
                     </div>
 
               </div>
